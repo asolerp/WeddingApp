@@ -1,0 +1,23 @@
+{
+  "MainPage": {
+    "salute": "HOLA",
+    "mainText": "Lo primero de todo, deciros que estaríamos super felices de poder compartir el día de nuestra boda con vosotros.",
+    "subText": "Aprentando en el botón inferior accederas a un formulari para poder confirmar tu asistencia y elegir el palto principal! :)"
+  },
+  "Asistencia": {
+    "mainText": "Esperamos que sea un sí, perooo, podéis confirmar vusestra asistencia?"
+  },
+  "Bus": {
+    "mainText": "Queremos que tu única preocupación sea pasártelo en grande, deja el coche en casa y reserva tu plaza en el bus que hemos reservado para el gran día. Saldrá a las 17:45h de Eusebio Estada, al lado de la plaza de España. Habrá una vuelta las 03:00h y otra a las 05:00h.",
+    "question": "Quieres reservar tu plaza?"
+  }
+  ,
+  "Menu": {
+    "mainText": "Te damos la oportunidad de elgir tu plano principal para la boda :)",
+    "question": "Cúal vas a elegir?",
+    "mainMenu": ["Solomillo", "Carrilleras", "Lubina", "Seitan"]
+  },
+  "Resumen": {
+    "mainText": "Muchas gracias por completar el formulario!"
+  }
+}
