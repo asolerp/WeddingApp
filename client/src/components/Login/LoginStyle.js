@@ -9,6 +9,23 @@ const LoginStyleComponent = styled.div`
     font-size: 15vw;
     text-shadow: 0px 0px 2px #494949;
   }
+
+  .lenguages {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    p {
+      margin: 0%;
+      font-weight: bold;
+      color: white;
+      margin: 0 3% 10% 3%
+    }
+
+  }
+
   .form {
     display: flex;
     justify-content: space-around;
@@ -28,11 +45,7 @@ const LoginStyleComponent = styled.div`
       margin-left: 20px;
     }
 
-    p {
-      color: red;
-    }
-
-    div {
+    .formContainer {
       display: flex;
       justify-content: center;
       align-items: center;

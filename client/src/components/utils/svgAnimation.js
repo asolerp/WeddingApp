@@ -10,9 +10,9 @@ const animateForm = (widthView, posIniY, posEndY, id, time) => {
       },
       to: {
         transalteX: widthView/2,
-        transalteY: 650,
+        transalteY: 620,
         scaleX: 1.7,
-        scaleY: 1.5
+        scaleY: 1.3
       },
       duration: time,
       ease: easing.easeInOut,

@@ -22,6 +22,20 @@ const HomeStyleComponent = styled.div`
     color: #858f7f;
   }
 
+  .lenguages {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    display: flex;
+    z-index:20;
+
+    p {
+      margin: 0 5%;
+      color: white;
+      font-size: 15px;
+    }
+  }
+
   .imagenHome {
     margin-top: 25%;
     width: 55vw;

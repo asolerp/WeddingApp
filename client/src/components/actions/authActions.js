@@ -9,7 +9,8 @@ import {
   GET_ALL_USERS_FAIL,
   GET_ALL_PARTICIPANTS,
   GET_ALL_PARTICIPANTS_SUCCESS,
-  GET_ALL_PARTICIPANTS_FAIL
+  GET_ALL_PARTICIPANTS_FAIL,
+  CHANGE_LENGUAGE
 } from "./types";
 
 import  AuthService from "../api/authBack";
@@ -30,6 +31,13 @@ export const passwordChanged = text => {
     payload: text
   };
 };
+
+export const changeLenguage = lenguage => {
+  return {
+    type: CHANGE_LENGUAGE,
+    payload: lenguage
+  }
+}
 
 export const getAllUsers = () => {
   return async (dispatch) => {
@@ -62,13 +70,14 @@ export const getParticipants = () => {
 };
 
 
-export const loginUser = ({ username, password, history }) => {
+export const loginUser = ({ username, password, history, lenguage }) => {
+  console.log(lenguage)
   return async (dispatch) => {
       dispatch({ type: LOGIN_USER });
       try {
         console.log(history)
         const user = await service.login(username, password);
-         dispatch({ type: LOGIN_USER_SUCCESS, payload: user.data })
+         dispatch({ type: LOGIN_USER_SUCCESS, payload: user.data, lenguage })
          history.push('/home')
       } catch (e) {
         console.log(e.response)

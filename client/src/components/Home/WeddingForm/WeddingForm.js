@@ -98,7 +98,7 @@ class WeddingForm extends Component {
 
     return (
       <Div100vh className="loading" style={{ height: "100rvh" }}>
-        <p>VIVA LOS NOVIOS!</p>
+        <p>{this.props.lenguage.Form.loading}</p>
         <Fade
           in={loading}
           style={{
@@ -186,9 +186,6 @@ class WeddingForm extends Component {
     return participant.atendance === true;
   };
 
-  prueba = () => {
-    return console.log("adios");
-  };
 
   manageFunctions = () => {
     if (this.props.user.participants.some(this.isTrue)) {
@@ -220,7 +217,7 @@ class WeddingForm extends Component {
         case 2:
           return (
             <React.Fragment>
-              <span>Resumen</span>
+              <span>{this.props.lenguage.Form.buttons.resumen}</span>
               <Icon>keyboard_arrow_right</Icon>
             </React.Fragment>
           );
@@ -245,7 +242,7 @@ class WeddingForm extends Component {
           return (
             <React.Fragment>
               <Icon>keyboard_arrow_left</Icon>
-              <span>Asistencia</span>
+              <span>{this.props.lenguage.Form.buttons.asistencia}</span>
             </React.Fragment>
           );
         case 2:
@@ -323,11 +320,12 @@ class WeddingForm extends Component {
 }
 
 const mapStateToProps = ({ authReducer, weddingFormReducer }) => {
-  const { user } = authReducer;
+  const { user, lenguage } = authReducer;
   const { index, direction } = weddingFormReducer;
 
   return {
     user,
+    lenguage,
     index,
     direction
   };

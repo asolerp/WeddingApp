@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "75cc90b894ce140f040767f620af722d",
-    "url": "/static/media/olivo.75cc90b8.png"
+    "revision": "3e959c5910605a021bb179b3a0a3a1ee",
+    "url": "/static/media/olivo1.3e959c59.png"
   },
   {
-    "revision": "3262a217043851749111",
-    "url": "/static/css/main.f0230c37.chunk.css"
+    "revision": "101f68c9aedc6b75dac3",
+    "url": "/static/css/main.d69291ec.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/media/seitan.55574b65.jpg"
   },
   {
-    "revision": "9bcab1cb63b920aa9e6a",
-    "url": "/static/js/2.bfeb888c.chunk.js"
+    "revision": "fa4414adfe321cfb8aa9",
+    "url": "/static/js/2.863de306.chunk.js"
   },
   {
     "revision": "af0d678962034269afbfb1c71e232cb1",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/home.d196dc64.jpg"
   },
   {
-    "revision": "3262a217043851749111",
-    "url": "/static/js/main.e32ad9c3.chunk.js"
+    "revision": "101f68c9aedc6b75dac3",
+    "url": "/static/js/main.d6f2f3bf.chunk.js"
   },
   {
     "revision": "73a7218e33febdf08c0ea50b057c7358",
@@ -60,11 +60,11 @@ self.__precacheManifest = [
     "url": "/static/media/lubina.0c4a82a8.jpg"
   },
   {
-    "revision": "9bcab1cb63b920aa9e6a",
-    "url": "/static/css/2.502d3aac.chunk.css"
+    "revision": "fa4414adfe321cfb8aa9",
+    "url": "/static/css/2.a3ba22b1.chunk.css"
   },
   {
-    "revision": "ab38d18a7cdfd5520b1fb74015ec8176",
+    "revision": "cee8903f6c624041f996666aaedf0f09",
     "url": "/index.html"
   }
 ];

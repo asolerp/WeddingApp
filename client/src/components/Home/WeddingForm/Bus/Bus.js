@@ -40,7 +40,7 @@ const Bus = props => {
           style={{ height: "40rvh", width: "100vw" }}
         />
         <div className="header">
-          <p className="title">Bus</p>
+          <p className="title">{props.lenguage.Bus.title}</p>
           <p className="subtitle">{props.lenguage.Bus.mainText}</p>
           <p className="subtitle">{props.lenguage.Bus.question}</p>
         </div>

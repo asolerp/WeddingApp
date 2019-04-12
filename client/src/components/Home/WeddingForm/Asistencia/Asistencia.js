@@ -40,7 +40,7 @@ const Asistencia = ({ ...props }) => {
           style={{ height: "40rvh", width: "100vw" }}
         />
         <div className="header">
-          <p className="title">Asistencia</p>
+          <p className="title">{props.lenguage.Asistencia.title}</p>
           <p className="subtitle">{props.lenguage.Asistencia.mainText}</p>
         </div>
         <div className="attendance">

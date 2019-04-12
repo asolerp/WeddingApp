@@ -63,6 +63,7 @@ class Login extends Component {
     super();
     this.props = props;
     this.state = {
+      lenguage: "sp",
       forms: [
         "M 200 200m -75 0a 75 75 0 1 0 150 0a 75 75 0 1 0 -150 0",
         "M 43.5703 34 C 115.977 -36.9719 237.588 40.7602 338.504 34 C 436.992 27.4024 584.269 -28.7116 623.167 20.0936 C 662.065 68.8988 600.451 177.68 602.012 281.32 C 603.64 389.403 654.491 511.401 602.012 586 C 532.926 586 158.625 587 31 586 C -29.2288 527.147 17.9491 394.039 22 296.215 C 26.729 182.016 -33.4904 109.534 43.5703 34 Z"
@@ -83,6 +84,9 @@ class Login extends Component {
     this.setState({ height: window.innerHeight });
   }
 
+  handleLenguage = lenguage => {
+    this.setState({lenguage})
+  }
 
   handleChange = name => event => {
     name === "username"
@@ -96,8 +100,18 @@ class Login extends Component {
 
   _loginUser = () => {
     const { username, password, history } = this.props;
-    this.props.loginUser({ username, password, history });
+    const { lenguage } = this.state;
+    this.props.loginUser({ username, password, history, lenguage });
   };
+
+  _renderLenguage = () => {
+    return (
+      <div className="lenguages">
+        <p onClick={()=>this.handleLenguage("sp")} style={this.state.lenguage === "sp" ? {textDecoration: "underline"} : {textDecoration: "none"}}>ESPAÑOL</p>
+        <p onClick={()=>this.handleLenguage("en")} style={this.state.lenguage === "en" ? {textDecoration: "underline"} : {textDecoration: "none"}}>ENGLISH</p>
+      </div>
+    )
+  }
 
   render() {
     const { classes } = this.props;
@@ -111,7 +125,7 @@ class Login extends Component {
             style={{ height: "100rvh" }}
           >
             <h1>A & C</h1>
-            <div>
+            <div className="formContainer">
 
               <TextField
                 id="outlined-name"
@@ -158,7 +172,8 @@ class Login extends Component {
                   }
                 }}
               />
-              <p>{this.props.error}</p>
+              <p style={{color: "white"}}>{this.props.error}</p>
+              {this._renderLenguage()}
               <Button
                 size="medium"
                 onClick={this._loginUser}

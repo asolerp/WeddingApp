@@ -1,0 +1,57 @@
+{
+  "idioma": "en",
+    "MainPage": {
+      "salute": "Welcome",
+      "mainText": "After 5 years together we are tightening the knot! And we would love to share this day with you! We have created this web so you can have all the information about the BIG DAY. Please fill the form so we can have your confirmation.",
+      "subText": "If you have any doubt, you will find our telephone numbers in the “information button.",
+      "buttons": {
+        "left": "Direction",
+        "center": "Information",
+        "right": "Form"
+      }
+    },
+    "Form": {
+      "loading": "Cheers for the newlyweds!",
+      "buttons": {
+        "resumen": "Summary",
+        "asistencia": "Attendance"
+      }
+    },
+    "Asistencia": {
+      "title": "Attendance",
+      "mainText": "We hope you say yes, but would you please confirm your attendance?"
+    },
+    "Bus": {
+      "title": "Bus",
+      "mainText": "Lynda is organazing the transport for the family, so you don’t need to choose the bus option."
+    },
+    "Menu": {
+      "title": "Menu",
+      "mainText": "Dinner will consist of pre-dineer snaks and drinks and a main course. Please choose your main course from the selection below.",
+      "question": "Which one do you choose?",
+      "dishes": {
+        "solomillo":{
+          "name": "Sirlon beef",
+          "description": "Sirlon beef steak with a sherry sauce served with sautéed vegetables and baby roast potatoes."
+        },
+        "carrilleras":{
+          "name": "Iberian pork",
+          "description": "Glazes Iberian pork cheeks served with purple potatoe puée, caramelized onions and carrot chips."
+        },
+        "lubina":{
+          "name": "Sea bass",
+          "description": "Grilled sea bass on a bed of parsnip purée, snow peas, cherry tomatoes and coriander sauce."
+        },
+        "seitan":{
+          "name": "Seitan",
+          "description": "Seitan marinated in herbs served with sautéed vegetables and baby roast potatoes."
+        }
+      },
+      "mainMenu": ["Solomillo", "Carrilleras", "Lubina", "Seitan"]
+    },
+    "Resumen": {
+      "title": "Summary",
+      "mainText": "Muchas gracias por completar el formulario!"
+    }
+  }
+  

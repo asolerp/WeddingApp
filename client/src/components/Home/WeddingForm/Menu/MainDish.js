@@ -13,34 +13,40 @@ import GridListTileBar from "@material-ui/core/GridListTileBar";
 import IconButton from "@material-ui/core/IconButton";
 import Icon from "@material-ui/core/Icon";
 
+
+
+const MainDish = props => {
+
+
+const { dishes } = props.lenguage.Menu
+
 const tileData = [
   {
     img: solomillo,
-    title: "Solomillo",
-    description: "Solomillo de ternera con salsa Pedro Ximénez acompañado de  verduras salteadas y patató asado en su jugo de carne.",
+    title: dishes.solomillo.name,
+    description: dishes.lubina.description,
     cols: 1
   },
   {
     img: carrilleras,
-    title: "Carrilleras",
-    description: "Carrilleras de cerdo ibérico glaseadas con pure de patatas violeta, cebolla caramelizada y chips de zanahorias.",
+    title: dishes.carrilleras.name,
+    description: dishes.carrilleras.description,
     cols: 1
   },
   {
     img: lubina,
-    title: "Lubina ",
-    description: "Lubina a la plancha con crema cítrica de chirivia, tirabeques y cherrys risolados, con salsa de cilantro.",
+    title: dishes.lubina.name,
+    description: dishes.lubina.description,
     cols: 1
   },
   {
     img: seitan,
-    title: "Seitan",
-    description: "Seitán marinado en hierbas con verduras salteadas y patató asado.",
+    title: dishes.seitan.name,
+    description: dishes.seitan.description,
     cols: 1
   }
 ];
 
-const MainDish = props => {
   return (
     <div
       style={{
@@ -75,11 +81,13 @@ const MainDish = props => {
   );
 };
 
-const mapStateToProps = ({ weddingFormReducer }) => {
+const mapStateToProps = ({ authReducer, weddingFormReducer }) => {
+  const { lenguage } = authReducer
   const { modal } = weddingFormReducer;
 
   return {
-    modal
+    modal,
+    lenguage
   };
 };
 

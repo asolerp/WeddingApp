@@ -1,23 +1,58 @@
 {
+  "idioma": "sp",
   "MainPage": {
     "salute": "Bienvenidos",
-    "mainText": "Después de 5 años hemos decidido que nos casamos! Y obviamente queremos que estéis a nuestro lado en nuestro gran día! Hemos creado esta web para que tengáis toda la información importante. A través del formulario obtendremos vuestra confirmación, así que no os olvidéis de rellenarlo. Y para cualquier duda en información encontraréis nuestros teléfonos. ¡Poneos guapos que nos vamos de Boda!",
-    "subText": ""
+    "mainText": "Después de 5 años hemos decidido que nos casamos! Y obviamente queremos que estéis a nuestro lado en nuestro gran día! Hemos creado esta web para que tengáis toda la información importante. A través del formulario obtendremos vuestra confirmación, así que no os olvidéis de rellenarlo. Y para cualquier duda en información encontraréis nuestros teléfonos.",
+    "subText": "¡Poneos guapos que nos vamos de Boda!",
+    "buttons": {
+      "left": "Dirección",
+      "center": "Información",
+      "right": "Formulario"
+    }
+  },
+  "Form": {
+    "loading": "Vivan los novios",
+    "buttons": {
+      "resumen": "Resumen",
+      "asistencia": "Asistencia"
+    }
   },
   "Asistencia": {
-    "mainText": "Esperamos que sea un sí, perooo, podéis confirmar vusestra asistencia?"
+    "title": "Asistencia",
+    "mainText": "Esperamos que sea un sí, pero podéis confirmar que podéis venir a nuestra boda?"
   },
   "Bus": {
-    "mainText": "Queremos que tu única preocupación sea pasártelo en grande, deja el coche en casa y reserva tu plaza en el bus que hemos reservado para el gran día. Saldrá a las 17:45h de Eusebio Estada, al lado de la plaza de España. Habrá una vuelta las 03:00h y otra a las 05:00h.",
+    "title": "Bus",
+    "mainText": "Queremos que de lo único que os tengáis que preocupar es de pasarlo bien! Así que dejad el coche en casa y venid en el bus que hemos reservado. Saldrá a las 17:45 de Eusebio Estada (al lado de la plaza de España) . Volverá al mismo punto a las 2:00 y a las 5:00.",
     "question": "Quieres reservar tu plaza?"
   }
   ,
   "Menu": {
-    "mainText": "Te damos la oportunidad de elgir tu plano principal para la boda :)",
+    "title": "Menu",
+    "mainText": "La cena consistirá en una picada variada tipo cocktail seguida de un plato principal y postre servido en mesa. Os damos la oportunidad de elegir el plato principal entre las siguientes 4 opciones.",
     "question": "Cúal vas a elegir?",
+    "dishes": {
+      "solomillo":{
+        "name": "Solomillo",
+        "description": "Solomillo de ternera con salsa Pedro Ximénez acompañado de  verduras salteadas y patató asado en su jugo de carne."
+      },
+      "carrilleras":{
+        "name": "Carrilleras",
+        "description": "Carrilleras de cerdo ibérico glaseadas con pure de patatas violeta, cebolla caramelizada y chips de zanahorias."
+      },
+      "lubina":{
+        "name": "Lubina",
+        "description": "Lubina a la plancha con crema cítrica de chirivia, tirabeques y cherrys risolados, con salsa de cilantro."
+      },
+      "seitan":{
+        "name": "Seitan",
+        "description": "Seitán marinado en hierbas con verduras salteadas y patató asado."
+      }
+    },
     "mainMenu": ["Solomillo", "Carrilleras", "Lubina", "Seitan"]
   },
   "Resumen": {
+    "title": "Resumen",
     "mainText": "Muchas gracias por completar el formulario!"
   }
 }

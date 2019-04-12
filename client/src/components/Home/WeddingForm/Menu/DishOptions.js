@@ -25,6 +25,7 @@ const handleChange = (name, props) => event => {
 };
 
 const DishOptions = props => {
+  console.log(props)
   const { classes } = props;
   return (
     <div style={{ marginBottom: "4%" }}>
@@ -53,7 +54,7 @@ const DishOptions = props => {
                       }}
                     />
                   }
-                  label={props.lenguage.Menu.mainMenu[0]}
+                  label={props.lenguage.Menu.dishes.solomillo.name}
                   labelPlacement="bottom"
                 />
                 <FormControlLabel
@@ -66,7 +67,7 @@ const DishOptions = props => {
                       }}
                     />
                   }
-                  label={props.lenguage.Menu.mainMenu[1]}
+                  label={props.lenguage.Menu.dishes.carrilleras.name}
                   labelPlacement="bottom"
                 />
                 <FormControlLabel
@@ -79,7 +80,7 @@ const DishOptions = props => {
                       }}
                     />
                   }
-                  label={props.lenguage.Menu.mainMenu[2]}
+                  label={props.lenguage.Menu.dishes.lubina.name}
                   labelPlacement="bottom"
                 />
                 <FormControlLabel
@@ -92,7 +93,7 @@ const DishOptions = props => {
                       }}
                     />
                   }
-                  label={props.lenguage.Menu.mainMenu[3]}
+                  label={props.lenguage.Menu.dishes.seitan.name}
                   labelPlacement="bottom"
                 />
               </RadioGroup>
