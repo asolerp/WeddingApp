@@ -4,9 +4,10 @@ import { HomeStyleComponent } from "./HomeStyle";
 import { Link } from "react-router-dom";
 import Icon from "@material-ui/core/Icon";
 import imagenHome from "../../images/home.jpg";
-import olivo from "../../images/olivo.png";
+import olivo from "../../images/olivo1.png";
 import Div100vh from "react-div-100vh";
 import FormAnimated from "../AnimatedForm/AnimatedForm";
+import spanishText from "../../textContent/spanish.json"
 
 const innerHeight = require("ios-inner-height");
 
@@ -47,7 +48,10 @@ class Home extends Component {
               <Div100vh
                 className="welcomeMessage"
                 style={{ height: "48.5rvh" }}
-              />
+              >
+              <p>{`${spanishText.MainPage.salute} ${this.props.user.username}`}</p>
+              <p>{spanishText.MainPage.mainText}</p>
+              </Div100vh>
 
               <Div100vh className="iconSection" style={{ height: "11.5rvh" }}>
                 <div className="iconContainer">

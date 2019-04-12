@@ -1,8 +1,8 @@
 {
   "MainPage": {
-    "salute": "HOLA",
-    "mainText": "Lo primero de todo, deciros que estaríamos super felices de poder compartir el día de nuestra boda con vosotros.",
-    "subText": "Aprentando en el botón inferior accederas a un formulari para poder confirmar tu asistencia y elegir el palto principal! :)"
+    "salute": "Bienvenidos",
+    "mainText": "Después de 5 años hemos decidido que nos casamos! Y obviamente queremos que estéis a nuestro lado en nuestro gran día! Hemos creado esta web para que tengáis toda la información importante. A través del formulario obtendremos vuestra confirmación, así que no os olvidéis de rellenarlo. Y para cualquier duda en información encontraréis nuestros teléfonos. ¡Poneos guapos que nos vamos de Boda!",
+    "subText": ""
   },
   "Asistencia": {
     "mainText": "Esperamos que sea un sí, perooo, podéis confirmar vusestra asistencia?"

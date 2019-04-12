@@ -11,7 +11,7 @@ const HomeStyleComponent = styled.div`
   overflow: hidden;
 
   h1 {
-    font-family: "Calligraffitti", cursive;
+    font-family: "Roboto";
     font-weight: bold;
     color: white;
   }
@@ -55,17 +55,14 @@ const HomeStyleComponent = styled.div`
 
   .welcomeMessage {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding: 0 10%;
 
     p {
-      background: #5b8067;
-      margin: 0 10%;
-      padding: 2% 2% 60% 2%;
-      border-radius: 5px;
-      color: white;
-      font-size: 14px;
+      font-size: 3.2vw;
+      color: #4c4e19;
     }
   }
 
@@ -87,17 +84,17 @@ const HomeStyleComponent = styled.div`
   }
 
   .iconLabel {
-    font-family: "Calligraffitti", cursive;
+    font-family: "Roboto";
     color: #858f7f;
     font-weight: bold;
   }
 
   .imagenOlivo {
     position: absolute;
-    transform: rotate(35deg);
+    transform: rotate(300deg);
     width: 84vw;
-    top: 33%;
-    right: -26%;
+    top: -49%;
+    right: -58%;
     opacity: 0.3;
     z-index: -5;
   }

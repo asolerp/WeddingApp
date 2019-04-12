@@ -13,7 +13,7 @@ const Event = require("../models/Event");
 const bcryptSalt = 10;
 
 mongoose
-  .connect(`mongodb://admin:Ayc.051213@ds047524.mlab.com:47524/wedding`, {
+  .connect(`mongodb://localhost/weddingapp`, {
     useNewUrlParser: true
   })
   .then(x => {
@@ -37,19 +37,24 @@ let usuarios = [{
 let participants = [
   {
     name: "Rafael",
-    lastName: "Salas"
+    lastName: "Salas",
+    group: "ana&rafa"
   },
   {
     name: "Ana",
-    lastName: "Salas"
+    lastName: "Salas",
+    group: "ana&rafa"
   },
   {
     name: "Xavi",
-    lastName: "Coll"
+    lastName: "Coll",
+    group: "xavi&tam"
+
   },
   {
     name: "Tamara",
-    lastName: "Colo"
+    lastName: "Colo",
+    group: "xavi&tam"
   }
 ];
 
@@ -59,15 +64,51 @@ let event = {
 };
 
 // Participant.deleteMany()
+// Participant.deleteMany()
+//   .then(event => {
+//     return Participant.insertMany(participants);
+//   })
+//   .then(participants => {
+//     return User.insertMany(usuarios);
+//   })
+//   .then(() => mongoose.disconnect());
+// // .catch(err => {
+// //   mongoose.disconnect();
+// //   throw err;
+// // });
+
+let promiseArr = [];
+
+function runUpdate(obj1, obj2) {
+  return new Promise((resolve, reject) => {
+    User.findOneAndUpdate({ _id: obj1._id }, { $push: {participants: obj2._id  }}, { upsert: true })
+      .then(result => resolve())
+      .catch(err => reject(err))
+  });
+}
+
+
+
 Participant.deleteMany()
-  .then(event => {
-    return Participant.insertMany(participants);
-  })
-  .then(participants => {
+  .then(() => {
     return User.insertMany(usuarios);
   })
-  .then(() => mongoose.disconnect());
-// .catch(err => {
-//   mongoose.disconnect();
-//   throw err;
-// });
+  .then(users => {
+    return Participant.insertMany(participants)
+      .then(participants => {
+        participants.forEach(participant =>
+          users.forEach(user =>
+            (participant.group === user.username) &&
+            promiseArr.push(runUpdate(user, participant))
+          )
+        )
+      })
+  })
+  .then(() => {
+    Promise.all(promiseArr)
+      .then((res) => {
+        console.log(res);
+        mongoose.disconnect()
+      })
+      .catch(err => console.log(err))
+  });
