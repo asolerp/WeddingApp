@@ -35,7 +35,7 @@ class Home extends Component {
 
     return (
       <Div100vh style={{ height: "100rvh" }}>
-        <FormAnimated
+        {/* <FormAnimated
           iniY={0}
           endY={0}
           time={2800}
@@ -43,9 +43,9 @@ class Home extends Component {
           absolute={false}
           className={"form1"}
           form={this.state.form[0]}
-        />
+        /> */}
         <HomeStyleComponent img={imagenHome}>
-          <Div100vh className="imageSection" style={{ height: "50rvh" }}>
+          <Div100vh className="imageSection" style={{ height: "30rvh" }}>
             <div className="lenguages">
               <p onClick={() => this.handleLenguage("sp")} style={this.state.lenguage === "sp" ? { textDecoration: "underline" } : { textDecoration: "none" }}>ES</p>
               <p onClick={() => this.handleLenguage("en")} style={this.state.lenguage === "en" ? { textDecoration: "underline" } : { textDecoration: "none" }}>EN</p>
@@ -54,34 +54,34 @@ class Home extends Component {
             {/* <img className="imagenHome" src={imagenHome} alt="boda" /> */}
           </Div100vh>
 
-          <Div100vh className="infoSection" style={{ height: "50rvh" }}>
+          <Div100vh className="infoSection" style={{ height: "70rvh" }}>
             <img className="imagenOlivo" src={olivo} alt="boda" />
             <div>
               <Div100vh
                 className="welcomeMessage"
                 style={{ height: "48.5rvh" }}
               >
-                <p>{`${this.props.lenguage.MainPage.salute} ${this.props.user.username}`}</p>
+                <h1>{`${this.props.lenguage.MainPage.salute} ${this.props.user.username}`}</h1>
                 <p>{this.props.lenguage.MainPage.mainText}</p>
                 <p>{this.props.lenguage.MainPage.subText}</p>
               </Div100vh>
 
               <Div100vh className="iconSection" style={{ height: "11.5rvh" }}>
                 <div className="iconContainer">
-                  <a className="iconLabel" href="https://goo.gl/maps/PVKv6ZA7Xzy" style={{ textDecoration: "none" }}>
+                  <a className="iconLabel" href="https://goo.gl/maps/PVKv6ZA7Xzy">
                     <Icon className="icon">mapa</Icon>
                     {this.props.lenguage.MainPage.buttons.left}
                   </a>
                 </div>
                 <div className="iconContainer">
 
-                  <Link className="iconLabel" to={"/info"} style={{ textDecoration: "none" }}>
+                  <Link className="iconLabel" to={"/info"}>
                     <Icon className="icon">info</Icon>
                     {this.props.lenguage.MainPage.buttons.center}
                   </Link>
                 </div>
                 <div className="iconContainer">
-                  <Link to="/wedding" style={{ textDecoration: "none" }}>
+                  <Link className="iconLabel" to="/wedding">
                     <Icon className="icon">assignment</Icon>
                     <span className="iconLabel">{this.props.lenguage.MainPage.buttons.right}</span>
                   </Link>

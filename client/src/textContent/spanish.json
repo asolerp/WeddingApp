@@ -10,6 +10,10 @@
       "right": "Formulario"
     }
   },
+  "InfoPage": {
+    "mainText": "Os esperamos en la finca el día 27 de Julio a las 18:30h. Mientras tanto, si necesitáis cualquier cosa, estos son nuestros datos de contacto.",
+    "subText": "Si queréis hablar directamente con el catering, nuestro contacto es:"
+  },
   "Form": {
     "loading": "Vivan los novios",
     "buttons": {

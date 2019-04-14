@@ -55,6 +55,7 @@ const HomeStyleComponent = styled.div`
     background-image: url(${props => props.img});
     background-size: 100% auto;
     background-repeat: no-repeat;
+    z-index: 2;
   }
 
   .infoSection {
@@ -65,6 +66,7 @@ const HomeStyleComponent = styled.div`
     justify-content: flex-end;
     align-items: center;
     width: 100vw;
+    z-index: 1;
   }
 
   .welcomeMessage {
@@ -73,6 +75,13 @@ const HomeStyleComponent = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 10%;
+    margin-bottom: 10%;
+
+    h1 {
+      font-family: "Calligraffitti", cursive;
+      font-size: 4.2vw;
+      color: #4c4e19;
+    }
 
     p {
       font-size: 3.2vw;
@@ -101,6 +110,11 @@ const HomeStyleComponent = styled.div`
     font-family: "Roboto";
     color: #858f7f;
     font-weight: bold;
+    text-decoration: none;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .imagenOlivo {

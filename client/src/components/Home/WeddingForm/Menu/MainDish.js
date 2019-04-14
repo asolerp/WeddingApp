@@ -24,7 +24,7 @@ const tileData = [
   {
     img: solomillo,
     title: dishes.solomillo.name,
-    description: dishes.lubina.description,
+    description: dishes.solomillo.description,
     cols: 1
   },
   {

@@ -13,7 +13,7 @@ const Event = require("../models/Event");
 const bcryptSalt = 10;
 
 mongoose
-  .connect(`mongodb://localhost/weddingapp`, {
+  .connect(`mongodb://admin:Ayc.051213@ds047524.mlab.com:47524/wedding`, {
     useNewUrlParser: true
   })
   .then(x => {
@@ -87,9 +87,9 @@ function runUpdate(obj1, obj2) {
   });
 }
 
-
-
-Participant.deleteMany()
+User.deleteMany()
+.then(()=> {
+  Participant.deleteMany()
   .then(() => {
     return User.insertMany(usuarios);
   })
@@ -112,3 +112,5 @@ Participant.deleteMany()
       })
       .catch(err => console.log(err))
   });
+})
+

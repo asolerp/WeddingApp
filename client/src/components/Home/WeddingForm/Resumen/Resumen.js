@@ -7,6 +7,9 @@ import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 
+import Icon from "@material-ui/core/Icon";
+
+
 import { ResumenStyleComponent } from "./ResumenStyle";
 
 import foto1 from "../../../../images/resumen.jpg";
@@ -43,10 +46,18 @@ const Resumen = props => {
                   {participant.name}
                 </TableCell>
                 <TableCell padding="none" align="center">
-                  {participant.atendance ? "Sí" : "No"}
+                {participant.atendance ? (
+                        <Icon style={{ color: "#4BC0C0" }}>check_circle</Icon>
+                      ) : (
+                        <Icon style={{ color: "#FF6384" }}>cancel</Icon>
+                      )}
                 </TableCell>
                 <TableCell padding="none" align="center">
-                  {participant.bus ? "Sí" : "No"}
+                {participant.atendance ? (
+                        <Icon style={{ color: "#4BC0C0" }}>check_circle</Icon>
+                      ) : (
+                        <Icon style={{ color: "#FF6384" }}>cancel</Icon>
+                      )}
                 </TableCell>
                 <TableCell padding="none" align="center">
                   {participant.dish}

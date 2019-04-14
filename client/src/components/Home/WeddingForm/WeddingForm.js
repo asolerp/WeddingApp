@@ -235,7 +235,7 @@ class WeddingForm extends Component {
         case 0:
           return (
             <React.Fragment>
-              <span></span>
+              <Link to={"/home"} style={{textDecoration: "none", color: "white"}}>Home</Link>
             </React.Fragment>
           );
         case 1:
@@ -304,7 +304,7 @@ class WeddingForm extends Component {
                       size="small"
                       style={{ color: "white", width: "30vw" }}
                       onClick={() => this.backSection(this.state.index)}
-                      disabled={this.state.index === 0}
+                    
                     >
                       {this.manageTextButtonsLeft()}
                     </Button>
