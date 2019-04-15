@@ -18,7 +18,8 @@
     "loading": "Vivan los novios",
     "buttons": {
       "resumen": "Resumen",
-      "asistencia": "Asistencia"
+      "asistencia": "Asistencia",
+      "enviar": "Enviar"
     }
   },
   "Asistencia": {

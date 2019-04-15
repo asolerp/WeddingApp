@@ -222,10 +222,10 @@ class WeddingForm extends Component {
             </React.Fragment>
           );
         case 3:
-          return "Enviar";
+          return this.props.lenguage.Form.buttons.enviar;
       }
     } else {
-      return "Enviar";
+      return this.props.lenguage.Form.buttons.enviar;
     }
   };
 

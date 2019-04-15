@@ -35,7 +35,7 @@ const WeddingFormStyleComponent = styled.div`
 
   .loading {
     background: #858f7f;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     display: -webkit-flex; /* NEW */
     display: flex;
@@ -43,6 +43,10 @@ const WeddingFormStyleComponent = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100vw;
+
+    p {
+      font-family: "Gloss"
+    }
     /* position: relative;
     overflow: hidden; */
   }

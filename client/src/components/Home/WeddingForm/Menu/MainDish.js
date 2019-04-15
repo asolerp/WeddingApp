@@ -58,7 +58,7 @@ const tileData = [
     >
       <GridList cellHeight={160} cols={2} style={{ width: "100vw" }}>
         {tileData.map(tile => (
-          <GridListTile key={tile.img} cols={tile.cols || 1}>
+          <GridListTile key={tile.img} cols={tile.cols || 1} onClick={() => props.updateModal(true, tile)}>
             <img
               src={tile.img}
               alt={tile.title}
@@ -69,7 +69,7 @@ const tileData = [
                 <span>{tile.description}</span>
               }
               actionIcon={
-                <IconButton onClick={() => props.updateModal(true, tile)}>
+                <IconButton >
                   <Icon style={{color: "white"}}>info</Icon>
                 </IconButton>
               }

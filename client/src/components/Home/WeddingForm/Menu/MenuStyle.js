@@ -13,12 +13,13 @@ const MenuStyleComponent = styled.div`
     .title {
       text-align: center;
       font-size: 32px;
-      font-family: "Calligraffitti", cursive;
+      font-family: "Gloss", cursive;
+      color: #4c4e19
     }
     .subtitle {
-      font-family: "Calligraffitti", cursive;
+      font-family: "RLight", cursive;
       text-align: center;
-    }
+      color: #4c4e19    }
   }
 
   .image {

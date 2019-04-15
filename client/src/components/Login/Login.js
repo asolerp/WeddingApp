@@ -134,6 +134,7 @@ class Login extends Component {
                 onChange={this.handleChange("username")}
                 margin="normal"
                 variant="outlined"
+                autoComplete='off'
                 ref="username"
                 InputLabelProps={{
                   classes: {
@@ -154,6 +155,7 @@ class Login extends Component {
                 label="Password"
                 type="password"
                 name="password"
+                autoComplete='off'
                 onChange={this.handleChange("password")}
                 autoComplete="password"
                 margin="normal"

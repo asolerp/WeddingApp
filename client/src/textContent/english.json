@@ -18,7 +18,8 @@
       "loading": "Cheers for the newlyweds!",
       "buttons": {
         "resumen": "Summary",
-        "asistencia": "Attendance"
+        "asistencia": "Attendance",
+        "enviar": "Send"
       }
     },
     "Asistencia": {

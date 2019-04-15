@@ -7,7 +7,9 @@ import imagenHome from "../../images/home.jpg";
 import olivo from "../../images/olivo1.png";
 import Div100vh from "react-div-100vh";
 import FormAnimated from "../AnimatedForm/AnimatedForm";
-import {changeLenguage} from "../actions/authActions"
+import {changeLenguage} from "../actions/authActions";
+import font from "../../fonts/Gloss_And_Bloom.ttf";
+import font2 from "../../fonts/Roboto-Light.ttf";
 
 const innerHeight = require("ios-inner-height");
 
@@ -44,7 +46,7 @@ class Home extends Component {
           className={"form1"}
           form={this.state.form[0]}
         /> */}
-        <HomeStyleComponent img={imagenHome}>
+        <HomeStyleComponent img={imagenHome} font={font} font2={font2}>
           <Div100vh className="imageSection" style={{ height: "30rvh" }}>
             <div className="lenguages">
               <p onClick={() => this.handleLenguage("sp")} style={this.state.lenguage === "sp" ? { textDecoration: "underline" } : { textDecoration: "none" }}>ES</p>

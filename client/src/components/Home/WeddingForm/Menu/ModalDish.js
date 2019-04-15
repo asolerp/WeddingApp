@@ -22,23 +22,25 @@ const ModalDish = props => {
       aria-describedby="alert-dialog-description"
     >
       <DialogTitle id="alert-dialog-title">
-        {props.dish !== undefined && props.dish.title}
+        <h1 style={{ fontFamily: "Gloss", fontWeight: 100, fontSize: "8vw", marginBottom: 0, color: "#4c4e19",  }}>
+          {props.dish !== undefined && props.dish.title}
+        </h1>
       </DialogTitle>
       <DialogContent>
         <div id="alert-dialog-description">
           <img
-            style={{ width: "100%", height: "30vh", objectFit: "cover", borderRadius: "2px", marginTop: "5%" }}
+            style={{ width: "100%", height: "30vh", objectFit: "cover", borderRadius: "5px", marginTop: "5%", boxShadow: "0 0 10px #505050" }}
             src={props.dish !== undefined && props.dish.img}
             alt={props.dish !== undefined && props.dish.title}
           />
-          <p> {props.dish !== undefined && props.dish.description}</p>
+          <p style={{ fontFamily: "RLight", color: "#4c4e19" }}> {props.dish !== undefined && props.dish.description}</p>
         </div>
       </DialogContent>
-      <DialogActions>
-        <Button onClick={() => handleClose(props)} color="primary" autoFocus>
+      {/* <DialogActions>
+        <Button onClick={() => handleClose(props)} autoFocus style={{color: "#4c4e19"}}>
           Cerrar
         </Button>
-      </DialogActions>
+      </DialogActions> */}
     </Dialog>
   );
 };

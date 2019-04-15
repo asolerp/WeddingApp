@@ -12,7 +12,7 @@ const Info = props => {
         <InfoStyleComponent>
             <Div100vh style={{height: "100rvh"}} className="infoContainer">
                 <img className="imagenOlivo" src={olivo} alt="boda" />
-                <p>{props.lenguage.InfoPage.mainText}</p>
+                <p className="text" style={{marginTop: 0}}>{props.lenguage.InfoPage.mainText}</p>
                 <div className="contacto">
                     <p>Carol</p>
                     <p><Icon className="icon">phone</Icon> +34 605 555 240</p>
@@ -23,12 +23,12 @@ const Info = props => {
                     <p><Icon className="icon">phone</Icon> +34 696 487 907</p>
                     <p><Icon className="icon">email</Icon> albertosolpal@gmail.com</p>
                 </div>
-                <p>{props.lenguage.InfoPage.subText}</p>
+                <p className="text">{props.lenguage.InfoPage.subText}</p>
                 <div className="contacto">
                     <p>Estefanía</p>
                     <p><Icon className="icon">phone</Icon> +34 690 125 183</p>
                 </div>
-                <Link to={"/home"}>Atrás</Link>
+                <Link to={"/home"} className="back">Atrás</Link>
             </Div100vh>
         </InfoStyleComponent>
     )

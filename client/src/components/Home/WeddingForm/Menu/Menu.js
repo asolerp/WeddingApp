@@ -24,7 +24,7 @@ const Menu = props => {
 
         <div className="attendance">
           <MainDish />
-          <p style={{   marginTop: "10%", fontSize: "32px" }}>{props.lenguage.Menu.question}</p>
+          <p style={{   marginTop: "15%", fontSize: "32px", fontFamily: "Gloss", color: "#4c4e19" }}>{props.lenguage.Menu.question}</p>
           <DishOptions {...props} />
           <ModalDish />
         </div>

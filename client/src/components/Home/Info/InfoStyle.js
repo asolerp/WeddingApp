@@ -10,6 +10,23 @@ const InfoStyleComponent = styled.div`
     position: relative;
     overflow: hidden;
 
+    .text {
+        margin: 8% 0;
+    }
+
+    .back {
+        text-decoration: none;
+        background-color: #858f7f;
+        color: white;
+        padding: 2%;
+        border: 1px solid #858f7f;
+        border-radius: 5px;
+    }
+
+    .icon {
+        margin-right: 2%;
+    }
+
     .infoContainer {
         display: flex;
         flex-direction: column;
@@ -19,6 +36,7 @@ const InfoStyleComponent = styled.div`
 
     p {
         display: flex;
+        margin: 1% 0;
     }
 
     .contacto {

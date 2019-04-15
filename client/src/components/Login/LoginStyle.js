@@ -9,6 +9,10 @@ const LoginStyleComponent = styled.div`
   font-style: normal;
 }
 
+input:-webkit-autofill {
+  background: red
+}
+
   background-image: url(${props => props.img});
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +24,6 @@ const LoginStyleComponent = styled.div`
     color: white;
     font-size: 15vw;
     margin-bottom: 35%;
-    font-weight: 100px;
     font-weight: 100;
   }
 

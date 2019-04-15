@@ -1,6 +1,21 @@
 import styled from "styled-components";
 
 const HomeStyleComponent = styled.div`
+
+@font-face {
+  font-family: 'Gloss';
+  src: url(${props => props.font}) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RLight';
+  src: url(${props => props.font2}) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
   @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
   display: flex;
   flex-direction: column;
@@ -78,12 +93,14 @@ const HomeStyleComponent = styled.div`
     margin-bottom: 10%;
 
     h1 {
-      font-family: "Calligraffitti", cursive;
-      font-size: 4.2vw;
+      font-family: "Gloss";
+      font-size: 7.2vw;
       color: #4c4e19;
+      font-weight: 100;
     }
 
     p {
+      font-family: "RLight";
       font-size: 3.2vw;
       color: #4c4e19;
     }
@@ -104,10 +121,12 @@ const HomeStyleComponent = styled.div`
     border-radius: 50%;
     padding: 5%;
     color: #858f7f;
+    margin-bottom: 5%;
   }
 
   .iconLabel {
-    font-family: "Roboto";
+    font-family: "RLight";
+    font-size: 3vw;
     color: #858f7f;
     font-weight: bold;
     text-decoration: none;
