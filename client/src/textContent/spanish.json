@@ -32,7 +32,7 @@
   }
   ,
   "Menu": {
-    "title": "Menu",
+    "title": "Menú",
     "mainText": "La cena consistirá en una picada variada tipo cocktail seguida de un plato principal y postre servido en mesa. Os damos la oportunidad de elegir el plato principal entre las siguientes 4 opciones.",
     "question": "Cúal vas a elegir?",
     "dishes": {
@@ -57,6 +57,12 @@
   },
   "Resumen": {
     "title": "Resumen",
+    "tabla": {
+      "invitados": "Invitado",
+      "asistencia": "Asistencia",
+      "bus": "Bus",
+      "menu": "Menu"
+    },
     "mainText": "Muchas gracias por completar el formulario!"
   }
 }

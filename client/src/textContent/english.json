@@ -2,13 +2,17 @@
   "idioma": "en",
     "MainPage": {
       "salute": "Welcome",
-      "mainText": "After 5 years together we are tightening the knot! And we would love to share this day with you! We have created this web so you can have all the information about the BIG DAY. Please fill the form so we can have your confirmation.",
-      "subText": "If you have any doubt, you will find our telephone numbers in the “information button.",
+      "mainText": "After 5 years together we are tying the knot! We would love to share this day with you! We have created this web so you  have all the information about the BIG DAY. Please confirm your attendance by filling in the form.",
+      "subText": "If you have any doubts,  our contact details are in the information button.",
       "buttons": {
         "left": "Direction",
         "center": "Information",
         "right": "Form"
       }
+    },
+    "InfoPage": {
+      "mainText": "Os esperamos en la finca el día 27 de Julio a las 18:30h. Mientras tanto, si necesitáis cualquier cosa, estos son nuestros datos de contacto.",
+      "subText": "Si queréis hablar directamente con el catering, nuestro contacto es:"
     },
     "Form": {
       "loading": "Cheers for the newlyweds!",
@@ -27,8 +31,8 @@
     },
     "Menu": {
       "title": "Menu",
-      "mainText": "Dinner will consist of pre-dineer snaks and drinks and a main course. Please choose your main course from the selection below.",
-      "question": "Which one do you choose?",
+      "mainText": "Dinner will consist of pre-dineer snacks and drinks and a main course. Please choose your main course from the selection below.",
+      "question": "Please make your choice.",
       "dishes": {
         "solomillo":{
           "name": "Sirlon beef",
@@ -51,6 +55,12 @@
     },
     "Resumen": {
       "title": "Summary",
+      "tabla": {
+        "invitados": "Guest",
+        "asistencia": "Attendance",
+        "bus": "Bus",
+        "menu": "Menu"
+      },
       "mainText": "Muchas gracias por completar el formulario!"
     }
   }

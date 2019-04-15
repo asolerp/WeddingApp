@@ -260,7 +260,13 @@ class WeddingForm extends Component {
           </React.Fragment>
         );
       }
-    } 
+    } else {
+      return (
+        <React.Fragment>
+          <Link to={"/home"} style={{textDecoration: "none", color: "white"}}>Home</Link>
+        </React.Fragment>
+      );
+    }
   };
 
   render() {

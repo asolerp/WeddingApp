@@ -193,7 +193,8 @@ class ResumenBoda extends Component {
           <Table style={{ width: "90vw" }} className={classes.table}>
             <TableHead>
               <TableRow>
-                <TableCell align="left">Invitado</TableCell>
+                <TableCell align="left">Nombre</TableCell>
+                <TableCell align="left">Apellido</TableCell>
                 <TableCell align="center">Asistencia</TableCell>
                 <TableCell align="center">Bus</TableCell>
                 <TableCell align="center">Menu</TableCell>
@@ -205,6 +206,9 @@ class ResumenBoda extends Component {
                   <TableRow key={participant.name}>
                     <TableCell component="th" scope="row">
                       {participant.name}
+                    </TableCell>
+                    <TableCell component="th" scope="row">
+                      {participant.lastName}
                     </TableCell>
                     <TableCell align="center">
                       {participant.atendance ? (
@@ -234,10 +238,11 @@ class ResumenBoda extends Component {
 }
 
 const mapStateToProps = ({ authReducer }) => {
-  const { users, participants } = authReducer;
+  const { users, participants, lenguage } = authReducer;
 
   return {
     users,
+    lenguage,
     participants
   };
 };

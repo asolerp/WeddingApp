@@ -14,28 +14,43 @@ import { ResumenStyleComponent } from "./ResumenStyle";
 
 import foto1 from "../../../../images/resumen.jpg";
 
+const getTraducedDish = (dish, props) => {
+
+  switch (dish) {
+    case "Solomillo":
+    return props.lenguage.Menu.dishes.solomillo.name
+    case "Carrilleras":
+    return props.lenguage.Menu.dishes.carrilleras.name
+    case "Lubina":
+    return props.lenguage.Menu.dishes.lubina.name
+    case "Seitan":
+    return props.lenguage.Menu.dishes.seitan.name
+  }
+
+}
+
 const Resumen = props => {
   return (
     <ResumenStyleComponent>
       <img src={foto1} alt="familia" />
       <div className="header">
-        <p className="title">Resumen</p>
+        <p className="title">{props.lenguage.Resumen.title}</p>
       </div>
       <div className="attendance">
         <Table style={{ width: "100vw" }}>
           <TableHead>
             <TableRow>
               <TableCell padding="none" align="center">
-                Invitado
+              {props.lenguage.Resumen.tabla.invitados}
               </TableCell>
               <TableCell padding="none" align="center">
-                Asistencia
+              {props.lenguage.Resumen.tabla.asistencia}
               </TableCell>
               <TableCell padding="none" align="center">
-                Bus
+              {props.lenguage.Resumen.tabla.bus}
               </TableCell>
               <TableCell padding="none" align="center">
-                Menu
+              {props.lenguage.Resumen.tabla.menu}
               </TableCell>
             </TableRow>
           </TableHead>
@@ -53,14 +68,14 @@ const Resumen = props => {
                       )}
                 </TableCell>
                 <TableCell padding="none" align="center">
-                {participant.atendance ? (
+                {participant.bus ? (
                         <Icon style={{ color: "#4BC0C0" }}>check_circle</Icon>
                       ) : (
                         <Icon style={{ color: "#FF6384" }}>cancel</Icon>
                       )}
                 </TableCell>
                 <TableCell padding="none" align="center">
-                  {participant.dish}
+                      {getTraducedDish(participant.dish, props)}
                 </TableCell>
               </TableRow>
             ))}

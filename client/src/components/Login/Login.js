@@ -12,6 +12,7 @@ import img from "../../images/login.jpg";
 import { LoginStyleComponent } from "./LoginStyle";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
+import font from "../../fonts/Gloss_And_Bloom.ttf"
 
 import Div100vh from "react-div-100vh";
 
@@ -117,14 +118,14 @@ class Login extends Component {
     const { classes } = this.props;
     return (
       <Div100vh style={{ height: "100rvh" }}>
-        <LoginStyleComponent height={this.state.height} img={img}>
+        <LoginStyleComponent height={this.state.height} img={img} font={font}>
           <Div100vh
             className="form"
             noValidate
             autoComplete="off"
             style={{ height: "100rvh" }}
           >
-            <h1>A & C</h1>
+            <h1>Carol & Alberto</h1>
             <div className="formContainer">
 
               <TextField
@@ -173,7 +174,7 @@ class Login extends Component {
                 }}
               />
               <p style={{color: "white"}}>{this.props.error}</p>
-              {this._renderLenguage()}
+         
               <Button
                 size="medium"
                 onClick={this._loginUser}

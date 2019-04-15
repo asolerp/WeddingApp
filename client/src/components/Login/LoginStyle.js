@@ -1,13 +1,27 @@
 import styled from "styled-components";
 
 const LoginStyleComponent = styled.div`
+
+@font-face {
+  font-family: 'Gloss';
+  src: url(${props => props.font}) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
   background-image: url(${props => props.img});
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
   h1 {
+    width: 100vw;
+    line-height: 89px;
+    font-family: "Gloss";
     color: white;
     font-size: 15vw;
-    text-shadow: 0px 0px 2px #494949;
+    margin-bottom: 35%;
+    font-weight: 100px;
+    font-weight: 100;
   }
 
   .lenguages {

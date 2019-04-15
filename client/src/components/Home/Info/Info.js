@@ -10,7 +10,7 @@ const Info = props => {
     console.log(props)
     return (
         <InfoStyleComponent>
-            <Div100vh style={{height: "100rvh"}}>
+            <Div100vh style={{height: "100rvh"}} className="infoContainer">
                 <img className="imagenOlivo" src={olivo} alt="boda" />
                 <p>{props.lenguage.InfoPage.mainText}</p>
                 <div className="contacto">

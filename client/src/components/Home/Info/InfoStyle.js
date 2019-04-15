@@ -5,10 +5,17 @@ const InfoStyleComponent = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 15%;
+    padding: 5% 10%;
     text-align: center;
     position: relative;
     overflow: hidden;
+
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
 
     p {
         display: flex;
