@@ -12,7 +12,7 @@ import Info from "./components/Home/Info/Info";
 
 class App extends Component {
   render() {
-    return (
+    return (     
       <div className="container">
         <Router>
           <Route exact path="/login" component={Login} />

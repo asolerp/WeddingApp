@@ -9,6 +9,14 @@ const LoginStyleComponent = styled.div`
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'RLight';
+  src: url(${props => props.font2}) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 input:-webkit-autofill {
   background: red
 }
@@ -69,6 +77,45 @@ input:-webkit-autofill {
       flex-direction: column;
     }
   }
+
+  .doMobile {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #858f7f;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  p {
+  font-family: "RLight";
+  color: white;
+  font-size: 8vw;
+}
+
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .doMobile {
+    display: none;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .doMobile {
+    display: none;
+  }
+
+}
 `;
 
 export { LoginStyleComponent };

@@ -13,6 +13,7 @@ import { LoginStyleComponent } from "./LoginStyle";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
 import font from "../../fonts/Gloss_And_Bloom.ttf"
+import font2 from "../../fonts/Roboto-Light.ttf"
 
 import Div100vh from "react-div-100vh";
 
@@ -86,7 +87,7 @@ class Login extends Component {
   }
 
   handleLenguage = lenguage => {
-    this.setState({lenguage})
+    this.setState({ lenguage })
   }
 
   handleChange = name => event => {
@@ -108,8 +109,8 @@ class Login extends Component {
   _renderLenguage = () => {
     return (
       <div className="lenguages">
-        <p onClick={()=>this.handleLenguage("sp")} style={this.state.lenguage === "sp" ? {textDecoration: "underline"} : {textDecoration: "none"}}>ESPAÑOL</p>
-        <p onClick={()=>this.handleLenguage("en")} style={this.state.lenguage === "en" ? {textDecoration: "underline"} : {textDecoration: "none"}}>ENGLISH</p>
+        <p onClick={() => this.handleLenguage("sp")} style={this.state.lenguage === "sp" ? { textDecoration: "underline" } : { textDecoration: "none" }}>ESPAÑOL</p>
+        <p onClick={() => this.handleLenguage("en")} style={this.state.lenguage === "en" ? { textDecoration: "underline" } : { textDecoration: "none" }}>ENGLISH</p>
       </div>
     )
   }
@@ -118,7 +119,11 @@ class Login extends Component {
     const { classes } = this.props;
     return (
       <Div100vh style={{ height: "100rvh" }}>
-        <LoginStyleComponent height={this.state.height} img={img} font={font}>
+        <LoginStyleComponent height={this.state.height} img={img} font={font} font2={font2}>
+          <div className="doMobile">
+            <p>Sólo para móbiles :)</p>
+            <p>Abre la wep desde el móbil</p>
+          </div>
           <Div100vh
             className="form"
             noValidate
@@ -175,8 +180,8 @@ class Login extends Component {
                   }
                 }}
               />
-              <p style={{color: "white"}}>{this.props.error}</p>
-         
+              <p style={{ color: "white" }}>{this.props.error}</p>
+
               <Button
                 size="medium"
                 onClick={this._loginUser}
