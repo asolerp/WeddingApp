@@ -28,7 +28,7 @@ const Info = props => {
                     <p>Estefanía</p>
                     <p><Icon className="icon">phone</Icon> +34 690 125 183</p>
                 </div>
-                <Link to={"/home"} className="back">Atrás</Link>
+                <Link to={"/home"} className="back" style={{fontFamily:"Gloss"}}>Atrás</Link>
             </Div100vh>
         </InfoStyleComponent>
     )

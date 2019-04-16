@@ -12,6 +12,7 @@ const InfoStyleComponent = styled.div`
 
     .text {
         margin: 8% 0;
+        font-family: "RLight"
     }
 
     .back {
@@ -37,6 +38,7 @@ const InfoStyleComponent = styled.div`
     p {
         display: flex;
         margin: 1% 0;
+        font-family: "RLight"
     }
 
     .contacto {
