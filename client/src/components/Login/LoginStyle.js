@@ -15,8 +15,7 @@ const LoginStyleComponent = styled.div`
   font-weight: normal;
   font-style: normal;
 }
-
-  height: 90vh;
+  height: ${props => props.height}px;
   background-image: url(${props => props.img});
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,7 +116,6 @@ const LoginStyleComponent = styled.div`
     display: none;
   }
   height: 110vh;
-
 }
 `;
 

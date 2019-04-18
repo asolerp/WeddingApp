@@ -16,6 +16,7 @@ import font from "../../fonts/Gloss_And_Bloom.ttf"
 import font2 from "../../fonts/Roboto-Light.ttf"
 
 import div from "react-div-100vh";
+import Div100vh from "react-div-100vh/lib/Div100vh";
 
 const styles = theme => ({
   root: {
@@ -69,13 +70,10 @@ class Login extends Component {
       forms: [
         "M 200 200m -75 0a 75 75 0 1 0 150 0a 75 75 0 1 0 -150 0",
         "M 43.5703 34 C 115.977 -36.9719 237.588 40.7602 338.504 34 C 436.992 27.4024 584.269 -28.7116 623.167 20.0936 C 662.065 68.8988 600.451 177.68 602.012 281.32 C 603.64 389.403 654.491 511.401 602.012 586 C 532.926 586 158.625 587 31 586 C -29.2288 527.147 17.9491 394.039 22 296.215 C 26.729 182.016 -33.4904 109.534 43.5703 34 Z"
-      ]
+      ],
+      height: 0
     };
   }
-
-  state = {
-    height: 0
-  };
 
   componentDidMount() {
     if (this.props.authenticated) {
@@ -128,7 +126,7 @@ class Login extends Component {
             className="form"
             noValidate
             autoComplete="off"
-          
+            style={{height: "100rvh"}}
           >
             <h1>Carol & Alberto</h1>
             <div className="formContainer">
@@ -190,7 +188,7 @@ class Login extends Component {
                 Login
               </Button>
             </div>
-          </div>
+            </div>
         </LoginStyleComponent>
       </div>
     );
