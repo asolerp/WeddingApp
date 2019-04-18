@@ -16,11 +16,7 @@ const LoginStyleComponent = styled.div`
   font-style: normal;
 }
 
-
-input:-webkit-autofill {
-  background: red
-}
-
+  height: 90vh;
   background-image: url(${props => props.img});
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +52,6 @@ input:-webkit-autofill {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
 
     fieldset {
       border: 1px solid white;
@@ -109,11 +104,19 @@ input:-webkit-autofill {
 
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 480px) {
   
   .doMobile {
     display: none;
   }
+
+}
+
+@media (min-width: 120px) and (max-width: 320px) {
+  .doMobile {
+    display: none;
+  }
+  height: 110vh;
 
 }
 `;

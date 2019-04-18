@@ -30,7 +30,9 @@ import { Carousel } from "react-responsive-carousel";
 import AuthService from "../../api/authBack";
 
 import Div100vh from "react-div-100vh";
-import { element } from "prop-types";
+
+import Dialog from '@material-ui/core/Dialog';
+import DialogContent from '@material-ui/core/DialogContent';
 
 const styles = {
   root: {
@@ -61,15 +63,14 @@ class WeddingForm extends Component {
       display: false,
       carousel: false,
       height: 0,
-      scroll: false
+      scroll: false,
+      modal: false
     };
     this.service = new AuthService();
     this.targetElement = null;
   }
 
   componentDidMount() {
-    // this.targetElement = document.querySelector(".weddingContainer");
-    // this.showTargetElement();
     this.displayLoading();
   }
 
@@ -92,6 +93,27 @@ class WeddingForm extends Component {
       });
     }, 2500);
   };
+
+  _handleModalClose = () => {
+    this.setState({ modal: false }, () => this.props.history.push("/home"));
+  };
+
+  _renderModal = () => {
+    return (
+      <Dialog
+          open={this.state.modal}
+          keepMounted
+          onClose={this._handleModalClose}
+          aria-labelledby="alert-dialog-slide-title"
+          aria-describedby="alert-dialog-slide-description"
+        >
+        <DialogContent>
+        <p>Nos vemos en la boda!</p>
+          </DialogContent>
+        
+        </Dialog>
+    )
+  }
 
   _renderLoading = () => {
     const { loading, display } = this.state;
@@ -139,10 +161,6 @@ class WeddingForm extends Component {
     );
   };
 
-  // handleSelect = (index, props) => {
-  //   props.updateIndexFormPage(index);
-  // };
-
   nextSection = scroll => {
     window.scroll(0, 0);
     if (scroll === 2) {
@@ -178,8 +196,7 @@ class WeddingForm extends Component {
   };
 
   updateForm = () => {
-    this.props.history.push("/home");
-    this.service.updateForm(this.props.user);
+    this.setState({modal: true}, ()=> this.service.updateForm(this.props.user))
   };
 
   isTrue = participant => {
@@ -275,6 +292,7 @@ class WeddingForm extends Component {
     return (
       <div>
         <WeddingFormStyleComponent>
+          {this._renderModal()}
           {this.state.display && this._renderLoading()}
           <div className="weddingContainer">
             {this.state.carousel && (

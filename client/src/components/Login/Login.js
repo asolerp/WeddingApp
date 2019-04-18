@@ -15,7 +15,7 @@ import { withStyles } from "@material-ui/core/styles";
 import font from "../../fonts/Gloss_And_Bloom.ttf"
 import font2 from "../../fonts/Roboto-Light.ttf"
 
-import Div100vh from "react-div-100vh";
+import div from "react-div-100vh";
 
 const styles = theme => ({
   root: {
@@ -118,17 +118,17 @@ class Login extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <Div100vh style={{ height: "100rvh" }}>
+      <div>
         <LoginStyleComponent height={this.state.height} img={img} font={font} font2={font2}>
           <div className="doMobile">
-            <p>Sólo para móbiles :)</p>
-            <p>Abre la wep desde el móbil</p>
+            <p>Sólo para móviles :)</p>
+            <p>Abre la wep desde el móvil</p>
           </div>
-          <Div100vh
+          <div
             className="form"
             noValidate
             autoComplete="off"
-            style={{ height: "100rvh" }}
+          
           >
             <h1>Carol & Alberto</h1>
             <div className="formContainer">
@@ -190,9 +190,9 @@ class Login extends Component {
                 Login
               </Button>
             </div>
-          </Div100vh>
+          </div>
         </LoginStyleComponent>
-      </Div100vh>
+      </div>
     );
   }
 }
