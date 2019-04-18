@@ -14,7 +14,7 @@ function runUpdate(obj) {
         bus: obj.bus,
         dish: obj.dish,
         firsTime: false
-      })
+      }, {new: true})
       .then(result => resolve(result))
       .catch(err => reject(err))
   });
@@ -37,16 +37,31 @@ router.post("/updateForm", (req, res, next) => {
       }
     });
   transporter.sendMail({
-      from: "ACTUALIZACIÓN PARTICIPANTE BODA 💍",
-      to: "albertosolpal@gmail.com, carolinabaudes@gmail.com", 
+      from: '"ACTUALIZACIÓN PARTICIPANTE BODA 💍" <a&c@nosvamosdeboda.com>',
+      to: "albertosolpal@gmail.com", 
       subject: `${res[0].group} han modificado su participacion!`, 
-      text: "",
+      text: "Hola",
       html: `
       <html>
-      ${res.map(particpante => `
-      <p>    Participante    |        Asitencia         |          Bus       |        Plato       </p>
-      <p>${particpante.name} | ${particpante.atendance} | ${particpante.bus} | ${particpante.dish}</p>
-      `)}
+    
+      <table>
+        <tr>
+          <th>Participantes</th>
+          <th>Asistencia</th> 
+          <th>Bus</th>
+          <th>Plato</th>
+        </tr>
+        ${res.map(particpante => {
+          return (`
+          <tr>
+            <td>${particpante.name}</td>
+            <td>${particpante.atendance}</td> 
+            <td>${particpante.bus}</td>
+            <td>${particpante.dish}</td>
+          </tr>
+          `)
+        })}     
+      </table>
       </html>`
     })
     .then(info => res.status(200).json(info))
