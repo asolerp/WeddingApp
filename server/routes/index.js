@@ -38,7 +38,7 @@ router.post("/updateForm", (req, res, next) => {
     });
   transporter.sendMail({
       from: '"ACTUALIZACIÓN PARTICIPANTE BODA 💍" <a&c@nosvamosdeboda.com>',
-      to: "albertosolpal@gmail.com", 
+      to: "albertosolpal@gmail.com, carolinabaudes@gmail.com", 
       subject: `${res[0].group} han modificado su participacion!`, 
       text: "Hola",
       html: `
@@ -55,8 +55,8 @@ router.post("/updateForm", (req, res, next) => {
           return (`
           <tr>
             <td>${particpante.name}</td>
-            <td>${particpante.atendance}</td> 
-            <td>${particpante.bus}</td>
+            <td>${particpante.atendance ? "Sí" : "No"}</td> 
+            <td>${particpante.bus ? "Sí" : "No" }</td>
             <td>${particpante.dish}</td>
           </tr>
           `)

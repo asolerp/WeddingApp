@@ -27,288 +27,302 @@ mongoose
 
   let usuarios = [
     {
+      username: "Losnovios",
+      password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
+    },
+    {
     username: "Ana&rafa",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Xavi&tam",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Madredelanovia",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Jessie&sebas",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
-    username: "Stephanie&Enrique",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    username: "Stephanie&enrique",
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Val",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Beatriz",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Diana&peter",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
-    username: "MarshFamily",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    username: "Marshfamily",
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Rosie",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Robert",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Nicola",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Joanna",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Vanessa",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
-    username: "Raquelunxi",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    username: "Raquel&gaston",
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Paula&mario",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Cati&miguel",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Laly&josep",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Marta&adria",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Aelyn&oscar",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Maria&joan",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Xisca&albert",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Barbara&juanga",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Clara",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Monica&antonio",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
-    username: "Inma&Jorx",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    username: "Inma&jorx",
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
-    username: "Marina&Tomeu",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    username: "Marina&tomeu",
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Ale&mora",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Marta&alberto",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Sandra&miquel",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Padresdelnovio",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Camilo&mar",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Mangel&chari",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Oscar",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Sandra&pedro",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Familiasolerquert",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Toñi&abel",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Lidia&paco",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Abel&barbara",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Anamari&mangel",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Marina&juanjo",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Aina&pablo",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Mantonia&gabriel",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Mangel&rebeca",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Biel&maria",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Mmar&hector",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Gabriel",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Campito",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Juan&carmen",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Agus&cris",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Axu&nerea",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Marina&edu",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Marina&mateo",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Xisco",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Juan",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Jorge",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Adri",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Gus",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Simon",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Diego",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Christian",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Stephen",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Lourdes&mangel",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Noelia",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Vanesa",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Ines",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Jesus&marga",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Tono&xesca",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Xisca",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
   {
     username: "Santiago&pirjo",
-    password: bcrypt.hashSync("a&c", bcrypt.genSaltSync(bcryptSalt))
+    password: bcrypt.hashSync("A&C", bcrypt.genSaltSync(bcryptSalt))
   },
 ];
 
 let participants = [
+  {
+    name: "Alberto",
+    lastName: "Soler",
+    group: "Losnovios"
+  },
+  {
+    name: "Carol",
+    lastName: "Baudes",
+    group: "Losnovios"
+  },
   {
     name: "Rafa",
     lastName: "Salas",
@@ -358,12 +372,12 @@ let participants = [
     {
       name: "Stephanie",
       lastName: "Baudes",
-      group: "Stephanie&Enrique"
+      group: "Stephanie&enrique"
     },
     {
       name: "Enrique",
       lastName: "Baudes",
-      group: "Stephanie&Enrique"
+      group: "Stephanie&enrique"
     },
     {
       name: "Val",
@@ -388,22 +402,22 @@ let participants = [
     {
       name: "Lyndy",
       lastName: "Imrie",
-      group: "MarshFamily"
+      group: "Marshfamily"
     },
     {
       name: "Jules",
       lastName: "Imrie",
-      group: "MarshFamily"
+      group: "Marshfamily"
     },
     {
       name: "Emma",
       lastName: "Imrie",
-      group: "MarshFamily"
+      group: "Marshfamily"
     },
     {
       name: "Bastian",
       lastName: "Imrie",
-      group: "MarshFamily"
+      group: "Marshfamily"
     },
     {
       name: "Rosie",
@@ -433,7 +447,12 @@ let participants = [
     {
       name: "Raquel",
       lastName: "Torres",
-      group: "Raqueluxi"
+      group: "Raquel&gaston"
+    },
+    {
+      name: "Gaston",
+      lastName: "Torres",
+      group: "Raquel&gaston"
     },
     {
       name: "Paula",
@@ -538,22 +557,22 @@ let participants = [
     {
       name: "Inma",
       lastName: "Bibiloni",
-      group: "Inma&Jorx"
+      group: "Inma&jorx"
     },
     {
       name: "Jorge",
       lastName: "Bibiloni",
-      group: "Inma&Jorx"
+      group: "Inma&jorx"
     },
     {
       name: "Marina",
       lastName: "Alomar",
-      group: "Marina&Tomeu"
+      group: "Marina&tomeu"
     },
     {
       name: "Tomeu",
       lastName: "Alomar",
-      group: "Marina&Tomeu"
+      group: "Marina&tomeu"
     },
     {
       name: "Mora",
