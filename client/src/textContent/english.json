@@ -33,6 +33,7 @@
     "Menu": {
       "title": "Menu",
       "mainText": "Dinner will consist of pre-dineer snacks and drinks and a main course. Please choose your main course from the selection below.",
+      "mainText2": "(there will be a special menú for children)",
       "question": "Please make your choice.",
       "dishes": {
         "solomillo":{

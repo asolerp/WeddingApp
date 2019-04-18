@@ -20,6 +20,7 @@ const Menu = props => {
         <div className="header">
           <p className="title">Menu</p>
           <p className="subtitle">{props.lenguage.Menu.mainText}</p>
+          <p className="subtitle">{props.lenguage.Menu.mainText2}</p>
         </div>
 
         <div className="attendance">
