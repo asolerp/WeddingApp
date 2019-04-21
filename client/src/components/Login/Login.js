@@ -118,24 +118,23 @@ class Login extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <Div100vh style={{ height: "100rvh" }}>
+      <div>
         <LoginStyleComponent height={this.state.height} img={img} font={font} font2={font2}>
           <div className="doMobile">
             <p>Sólo para móbiles :)</p>
             <p>Abre la wep desde el móbil</p>
           </div>
-          <Div100vh
+          <div
             className="form"
             noValidate
             autoComplete="off"
-            style={{ height: "100rvh" }}
           >
             <h1>Carol & Alberto</h1>
             <div className="formContainer">
 
               <TextField
                 id="outlined-name"
-                label="Name"
+                Div100vhlabel="Name"
                 onChange={this.handleChange("username")}
                 margin="normal"
                 variant="outlined"
@@ -190,9 +189,9 @@ class Login extends Component {
                 Login
               </Button>
             </div>
-          </Div100vh>
+          </div>
         </LoginStyleComponent>
-      </Div100vh>
+      </div>
     );
   }
 }
