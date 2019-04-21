@@ -35,7 +35,6 @@
   "Menu": {
     "title": "Menú",
     "mainText": "La cena consistirá en una picada variada tipo cocktail seguida de un plato principal y postre servido en mesa. Os damos la oportunidad de elegir el plato principal entre las siguientes 4 opciones.",
-    "mainText2": "(para los niños habrá un menú especial)",
     "question": "Cúal vas a elegir?",
     "dishes": {
       "solomillo":{

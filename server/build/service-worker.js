@@ -14,7 +14,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
+<<<<<<< HEAD
   "/precache-manifest.3d542b99f79cf01683dfc7b5a785cd65.js"
+=======
+  "/precache-manifest.4ce6b9b340b7e1658e3912a624f3493f.js"
+>>>>>>> parent of 16e599e... wedding app v1.1 💍
 );
 
 workbox.clientsClaim();
