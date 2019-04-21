@@ -47,7 +47,7 @@ margin: 0 3% 10% 3%
 }
 
 .form {
-display: flex;
+display: none;
 justify-content: space-around;
 align-items: center;
 flex-direction: column;
@@ -94,10 +94,14 @@ font-size: 8vw;
 }
 
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 567px) {
 
 .doMobile {
 display: none;
+}
+
+.form {
+display: flex;
 }
 
 }
@@ -107,15 +111,23 @@ display: none;
 display: none;
 }
 
+.form {
+display: flex;
+}
+
 }
 
 @media (min-width: 120px) and (max-width: 320px) {
 .doMobile {
 display: none;
 }
+
+.form {
+display: flex;
+}
+
 height: 110vh;
 }
 `;
 
 export { LoginStyleComponent };
-
