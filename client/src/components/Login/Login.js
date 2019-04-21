@@ -119,7 +119,7 @@ class Login extends Component {
       <div>
         <LoginStyleComponent height={this.state.height} img={img} font={font} font2={font2}>
           <div className="doMobile">
-            <p>z</p>
+            <p>Sólo para móviles :)</p>
             <p>Abre la wep desde el móvil</p>
           </div>
           <div
