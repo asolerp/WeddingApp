@@ -212,7 +212,7 @@ class ResumenBoda extends Component {
         </div>
 
         <div className="attendance">
-        {
+        {/* {
           this.state.participantes !== undefined && (
             <FilterableTable
             namespace="Invitados"
@@ -223,9 +223,9 @@ class ResumenBoda extends Component {
             noFilteredRecordsMessage="No people match your filters!"
         />
           )
-        }
+        } */}
 
-          {/* <Table style={{ width: "90vw" }} className={classes.table}>
+          <Table style={{ width: "90vw" }} className={classes.table}>
             <TableHead>
               <TableRow>
                 <TableCell align="left">Nombre</TableCell>
@@ -265,7 +265,7 @@ class ResumenBoda extends Component {
                   </TableRow>
                 ))}
             </TableBody>
-          </Table> */}
+          </Table>
         </div>
       </ResumenBodaStyleComponent>
     );
