@@ -95,7 +95,7 @@ const LoginStyleComponent = styled.div`
 
 
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 567px) {
 
   .doMobile {
     display: none;
