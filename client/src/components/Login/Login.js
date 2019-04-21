@@ -210,7 +210,7 @@ authenticated
 export default withStyles(styles)(
 connect(
 mapStateToProps,
-{ userNameChanged, passwordChanged, loginUser }
+{ userNameChanged, passwordChanged,  loginUser }
 )(Login)
 );
 
