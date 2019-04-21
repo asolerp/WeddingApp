@@ -15,7 +15,6 @@ import { withStyles } from "@material-ui/core/styles";
 import font from "../../fonts/Gloss_And_Bloom.ttf"
 import font2 from "../../fonts/Roboto-Light.ttf"
 
-import div from "react-div-100vh";
 import Div100vh from "react-div-100vh/lib/Div100vh";
 
 const styles = theme => ({
@@ -118,11 +117,11 @@ const { classes } = this.props;
 return (
 <div>
 <LoginStyleComponent height={this.state.height} img={img} font={font} font2={font2}>
-<div className="doMobile">
-<p>Sólo para móviles :)</p>
-<p>Abre la wep desde el móvil</p>
-</div>
-<div
+{/* <div className="doMobile">
+<p>Para una mejor experiencia</p>
+<p>Ver en vertical en tu movil :)</p>
+</div> */}
+<Div100vh
 className="form"
 noValidate
 autoComplete="off"
@@ -188,7 +187,8 @@ className={classNames(classes.cssRoot)}
 Login
 </Button>
 </div>
-</div>
+
+</Div100vh>
 </LoginStyleComponent>
 </div>
 );
@@ -213,28 +213,4 @@ mapStateToProps,
 { userNameChanged, passwordChanged, loginUser }
 )(Login)
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
