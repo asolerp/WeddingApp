@@ -119,8 +119,8 @@ return (
 <Div100vh>
 <LoginStyleComponent height={this.state.height} img={img} font={font} font2={font2}>
 <div className="doMobile">
-<p>Para una mejor experiencia</p>
-<p>Ver en vertical en tu movil :)</p>
+<p>Carol & Alberto WeddingApp</p>
+<p>Asegurate de acceder desde tu móvil en posición vertical</p>
 </div>
 <Div100vh
 className="form"

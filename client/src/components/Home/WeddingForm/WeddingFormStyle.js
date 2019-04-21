@@ -76,6 +76,46 @@ const WeddingFormStyleComponent = styled.div`
     justify-content: center;
     align-items: flex-end;
   }
+
+  .horizontal-content {
+    display: none;
+  }
+
+
+
+      @media screen and (orientation: landscape) and (max-height: 414px){
+        
+        .weddingContainer {
+            display: none;
+          }
+
+          .horizontal-content {
+              display: block;
+              height: 100vh;
+              width: 100vw;
+              background-color: #858f7f;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              color: white;
+              letter-spacing: 0.05rem;
+  
+
+              .phone-return {
+                width: 8%;
+              }
+
+              p {
+                color: white;
+                font-family: 'RLight';
+                font-size: 3vw;
+                margin-right: 2%;
+              }
+      }
+
+      }
+
 `;
 
 export { WeddingFormStyleComponent };

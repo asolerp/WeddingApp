@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/login.fc0af08d.jpg"
   },
   {
-    "revision": "2eb5c1736f0572157bd1",
+    "revision": "ea988786b1e94ddf807a",
     "url": "/static/css/main.5ccfbb46.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/static/media/seitan.55574b65.jpg"
   },
   {
-    "revision": "e6cf90437b8e6474677c",
-    "url": "/static/js/2.ed4eecf1.chunk.js"
+    "revision": "b55d63e4731f94fe3e50",
+    "url": "/static/js/2.894d7cad.chunk.js"
   },
   {
     "revision": "34424cb4a9c03b72de3d38ed59634c6e",
@@ -32,12 +32,16 @@ self.__precacheManifest = [
     "url": "/static/media/olivo1.3e959c59.png"
   },
   {
+    "revision": "545f2175ba933edb560b7d97d99b17fc",
+    "url": "/static/media/phoneReturn.545f2175.gif"
+  },
+  {
     "revision": "af0d678962034269afbfb1c71e232cb1",
     "url": "/static/media/resumen.af0d6789.jpg"
   },
   {
-    "revision": "2eb5c1736f0572157bd1",
-    "url": "/static/js/main.3f4e6aac.chunk.js"
+    "revision": "ea988786b1e94ddf807a",
+    "url": "/static/js/main.0b5d8ecb.chunk.js"
   },
   {
     "revision": "eb588b87ed403972192466abd31ea229",
@@ -68,11 +72,11 @@ self.__precacheManifest = [
     "url": "/static/media/lubina.0c4a82a8.jpg"
   },
   {
-    "revision": "e6cf90437b8e6474677c",
+    "revision": "b55d63e4731f94fe3e50",
     "url": "/static/css/2.502d3aac.chunk.css"
   },
   {
-    "revision": "9cc1658ed21729fc5e75a60b37676a93",
+    "revision": "0f5beee12cc72c9ddf045ceae68086f4",
     "url": "/index.html"
   }
 ];

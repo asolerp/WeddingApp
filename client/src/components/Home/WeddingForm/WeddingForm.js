@@ -34,6 +34,8 @@ import Div100vh from "react-div-100vh";
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 
+import phoneReturn from '../phoneReturn.gif'
+
 const styles = {
   root: {
     backgroundColor: "#858f7f",
@@ -292,6 +294,11 @@ class WeddingForm extends Component {
     return (
       <div>
         <WeddingFormStyleComponent>
+        <div className="horizontal-content">
+        <p>Cambia la orientación del dispositivo.</p>
+        <img className="phone-return" src={phoneReturn} alt="phone-return"/>
+      </div>
+
           {this._renderModal()}
           {this.state.display && this._renderLoading()}
           <div className="weddingContainer">

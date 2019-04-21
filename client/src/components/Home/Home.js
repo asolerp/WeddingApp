@@ -10,6 +10,7 @@ import FormAnimated from "../AnimatedForm/AnimatedForm";
 import {changeLenguage} from "../actions/authActions";
 import font from "../../fonts/Gloss_And_Bloom.ttf";
 import font2 from "../../fonts/Roboto-Light.ttf";
+import phoneReturn from './phoneReturn.gif'
 
 const innerHeight = require("ios-inner-height");
 
@@ -36,7 +37,8 @@ class Home extends Component {
   render() {
 
     return (
-      <Div100vh style={{ height: "100rvh" }}>
+      <React.Fragment>
+      <Div100vh style={{ height: "100rvh" }} >
         {/* <FormAnimated
           iniY={0}
           endY={0}
@@ -47,6 +49,11 @@ class Home extends Component {
           form={this.state.form[0]}
         /> */}
         <HomeStyleComponent img={imagenHome} font={font} font2={font2}>
+        <div className="horizontal-content">
+        <p>Cambia la orientación del dispositivo.</p>
+        <img className="phone-return" src={phoneReturn} alt="phone-return"/>
+      </div>
+        <div className="vertical-content">
           <Div100vh className="imageSection" style={{ height: "30rvh" }}>
             <div className="lenguages">
               <p onClick={() => this.handleLenguage("sp")} style={this.state.lenguage === "sp" ? { textDecoration: "underline" } : { textDecoration: "none" }}>ES</p>
@@ -91,8 +98,12 @@ class Home extends Component {
               </Div100vh>
             </div>
           </Div100vh>
+        </div>
         </HomeStyleComponent>
+
       </Div100vh>
+       </React.Fragment>
+  
     );
   }
 }

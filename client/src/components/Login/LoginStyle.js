@@ -88,7 +88,7 @@ z-index: 10;
 p {
 font-family: "RLight";
 color: white;
-font-size: 8vw;
+font-size: 3vw;
 }
 
 }
