@@ -47,7 +47,7 @@ const LoginStyleComponent = styled.div`
   }
 
   .form {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -95,10 +95,14 @@ const LoginStyleComponent = styled.div`
 
 
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 567px) {
 
   .doMobile {
     display: none;
+  }
+
+  .form {
+    display: flex;
   }
 
 }
@@ -109,12 +113,23 @@ const LoginStyleComponent = styled.div`
     display: none;
   }
 
+  .form {
+    display: flex;
+  }
+
+
 }
 
 @media (min-width: 120px) and (max-width: 320px) {
   .doMobile {
     display: none;
   }
+
+  .form {
+    display: flex;
+  }
+
+
   height: 110vh;
 }
 `;

@@ -25,7 +25,8 @@ const ResumenBodaStyleComponent = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-    margin-bottom: 5%
+    margin-bottom: 5%;
+    flex-wrap: wrap;
   }
 
   img {
@@ -50,10 +51,7 @@ const ResumenBodaStyleComponent = styled.div`
   }
 
   .attendance {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 40vh;
+
   }
 `;
 

@@ -19,7 +19,16 @@ import foto1 from "../../images/resumen.jpg";
 import { getAllUsers, getParticipants } from "../actions/authActions";
 import { withStyles } from "@material-ui/core";
 
+const FilterableTable = require('react-filterable-table');
 const _ = require("lodash");
+
+const fields = [
+  { name: 'name', displayName: "Nombe", inputFilterable: true, sortable: true },
+  { name: 'lastName', displayName: "Apellido", inputFilterable: true, exactFilterable: true, sortable: true },
+  { name: 'atendance', displayName: "Asistencia", inputFilterable: true, exactFilterable: true, sortable: true },
+  { name: 'bus', displayName: "Bus", inputFilterable: true, exactFilterable: true, sortable: true },
+  { name: 'dish', displayName: "Plato", inputFilterable: true, exactFilterable: true, sortable: true }
+];
 
 const styles = theme => ({
   table: {
@@ -100,7 +109,7 @@ class ResumenBoda extends Component {
         datasets: [
           {
             data: countDishes,
-            backgroundColor: ["#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED"]
+            backgroundColor: ["#E7E9ED", "#ff9c63", "#4BC0C0", "#FFCE56", "#ff63fc"]
           }
         ],
         labels: Object.keys(_.groupBy(participants, "dish"))
@@ -108,6 +117,12 @@ class ResumenBoda extends Component {
 
       this.setState({
         ...this.state,
+        participantes: participants.map(participante => ({
+          ...participante,
+          atendance: participante.atendance ? "Si" : "No",
+          bus: participante.bus ? "Si" : "No",
+        //  dish: this._renderTag(participante.dish),
+        })),
         atendanceChart: new Chart(ctx2, {
           data: dataAtendance,
           type: "doughnut"
@@ -124,49 +139,56 @@ class ResumenBoda extends Component {
     });
   }
 
-  _renderTag = dish => {
-    switch (dish) {
+  _renderTag = props => {
+    switch (props.value) {
       case "Solomillo":
         return (
-          <Chip
-            label={dish}
-            style={{ background: "#FF6384", color: "white" }}
-          />
+          <span
+            style={{ background: "#ff9c63", color: "white", borderRsadius: 50}}
+          >
+          {props.value}
+          </span>
         );
       case "Carrilleras":
         return (
-          <Chip
-            label={dish}
+          <span
             style={{ background: "#4BC0C0", color: "white" }}
-          />
+          >
+          {props.value}
+          </span>
         );
       case "Lubina":
         return (
-          <Chip
-            label={dish}
+          <span
             style={{ background: "#FFCE56", color: "white" }}
-          />
+          >
+          {props.value}
+          </span>
         );
       case "Seitan":
         return (
-          <Chip
-            label={dish}
-            style={{ background: "#E7E9ED", color: "white" }}
-          />
+          <span
+            style={{ background: "#ff63fc", color: "white" }}
+          >
+          {props.value}
+          </span>
         );
       default:
         return (
-          <Chip
-            label="Sin Seleccionar"
-            style={{ background: "#E7E9ED", color: "white" }}
-          />
+          <span
+            style={{ background: "#E7E9ED", color: "black" }}
+          >
+          Sin seleccionar
+          </span>
         );
     }
   };
 
+  
+
   render() {
     const { classes } = this.props;
-    console.log(this.props);
+    console.log(this.state.participantes)
 
     return (
       <ResumenBodaStyleComponent>
@@ -190,7 +212,20 @@ class ResumenBoda extends Component {
         </div>
 
         <div className="attendance">
-          <Table style={{ width: "90vw" }} className={classes.table}>
+        {
+          this.state.participantes !== undefined && (
+            <FilterableTable
+            namespace="Invitados"
+            initialSort="name"
+            data={this.state.participantes}
+            fields={fields}
+            noRecordsMessage="There are no people to display"
+            noFilteredRecordsMessage="No people match your filters!"
+        />
+          )
+        }
+
+          {/* <Table style={{ width: "90vw" }} className={classes.table}>
             <TableHead>
               <TableRow>
                 <TableCell align="left">Nombre</TableCell>
@@ -230,7 +265,7 @@ class ResumenBoda extends Component {
                   </TableRow>
                 ))}
             </TableBody>
-          </Table>
+          </Table> */}
         </div>
       </ResumenBodaStyleComponent>
     );
